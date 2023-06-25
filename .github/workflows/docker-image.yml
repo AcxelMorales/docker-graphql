@@ -28,7 +28,9 @@ jobs:
       - name: Build docker image
         run: |
           docker build -t acxelmorales/docker-graphql:0.0.2 .
+          docker build -t acxelmorales/docker-graphql .
 
       - name: Push docker image
         run: |
           docker push acxelmorales/docker-graphql:0.0.2
+          docker push acxelmorales/docker-graphql
